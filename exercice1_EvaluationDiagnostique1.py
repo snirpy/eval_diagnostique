@@ -37,7 +37,7 @@ while continuer != "q":
         continuer = "q"
     else:
         if compteur < 3:
-            print(f"Vous avez perdu! Il vous reste {3-1}")
+            print(f"Vous avez perdu! Il vous reste {3-compteur}")
             continuer = input("q pur quitter ou autre pour continuer: ")
         else:
             print("Vous avez atteint le nombre d'essais")
