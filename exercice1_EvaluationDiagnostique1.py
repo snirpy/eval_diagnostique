@@ -6,7 +6,7 @@ def saisir (message , limite):
     while valeur_int == 0:
         valeur_str = input(f"Quel est votre {message}? : ")
         try:
-            valeur_int = float(valeur_str) # si le cast fonctionne je passe à la suite :(else) et je saute except
+            valeur_int = int(valeur_str) # si le cast fonctionne je passe à la suite :(else) et je saute except
         except: # si le cast ne fonctionne pas je lève une exception
             print("Vous n'avez pas saisi une valeur numérique")
         else:
@@ -24,7 +24,7 @@ def saisir (message , limite):
 
 
 nb1 = randint(1,10)
-print(f"le nombre aléatoire généré: {nb1}")
+print(f"Le nombre aléatoire généré: {nb1}")
 continuer =""
 compteur = 0
 
@@ -38,7 +38,7 @@ while continuer != "q":
     else:
         if compteur < 3:
             print(f"Vous avez perdu! Il vous reste {3-compteur}")
-            continuer = input("q pur quitter ou autre pour continuer: ")
+            continuer = input("q pour quitter ou autre pour continuer: ")
         else:
             print("Vous avez atteint le nombre d'essais")
             continuer = "q"
